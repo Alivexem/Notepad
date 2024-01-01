@@ -160,6 +160,10 @@ body{
     color: gold;
 }
 
+.text{
+    text-decoration: underline;
+}
+
 #oops{
     display: flex;
     flex-direction: column;
