@@ -113,6 +113,7 @@ function addNoteToDOM(title, main) {
         heading.style.display = "none";
         close.style.display = "none";
         image.style.display = "flex";
+        line.style.display = "none";
       }
   });
 
