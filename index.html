@@ -1,0 +1,50 @@
+<!DOCTYPE Html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <title>Notepad</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    </head>
+    <body>
+        <center>
+         <h4 id="greeting" style="color: violet;"></h4>
+     </center>
+        <h1 style="color: gold;">AlivexemTech Notepad</h1>
+
+        
+            <div id="note">
+                <p style="font-size: 16px; font-weight: bold;">TITLE </p>
+                <input id="title" type="text" placeholder="e.g AlivexemTech">
+        <p style="font-size: 14px; font-weight: bold;">START WRITING NOTES</p>
+        <textarea id="main" rows="40" cols="30" placeholder="e.g The developer behind AlivexemTech..."></textarea>
+    </div>
+    <div id="btn">
+        <button id="save">Save</button>
+        <button id="refresh">refresh</button>
+        
+    </div>
+    <center>
+       <h2 id="heading" style="color: #99CCFF;">MY NOTES</h2>
+        </center>
+   <div id="list">
+       
+   </div>
+   <h3 id="h3" style="color: violet;"> Note opened </h3>
+           <div id="show"></div>
+           <div id="close">
+               <button id="closebtn">close note</button>
+           </div>
+        
+        <div id="oops">
+            <img src="opps.webp" height="130" width="130" alt="nothing here">
+            <tt style="font-size: 15px; color:white;">Nothing here yet</tt>
+        </div>
+     
+
+
+
+    </body>
+        <script src="app.js"></script>
+</html>
