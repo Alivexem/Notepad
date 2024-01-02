@@ -97,23 +97,25 @@ function addNoteToDOM(title, main) {
     }
 
     button.addEventListener("click", (e) => {
-   
-      let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
-      let noteIndex = savedNotes.findIndex((note) => note.title === title);
-      if (noteIndex !== -1) {
-        savedNotes.splice(noteIndex, 1);
-        localStorage.setItem("notes", JSON.stringify(savedNotes));
-      }
+      let decision = confirm("Are you sure you want to delete this note?")
+      if(decision){
+        let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+        let noteIndex = savedNotes.findIndex((note) => note.title === title);
+        if (noteIndex !== -1) {
+          savedNotes.splice(noteIndex, 1);
+          localStorage.setItem("notes", JSON.stringify(savedNotes));
+        }
 
    
-      e.target.parentNode.remove();
+        e.target.parentNode.remove();
 
-      if (list.innerText == "") {
-        show.style.display = "none";
-        heading.style.display = "none";
-        close.style.display = "none";
-        image.style.display = "flex";
-        line.style.display = "none";
+        if (list.innerText == "") {
+          show.style.display = "none";
+          heading.style.display = "none";
+          close.style.display = "none";
+          image.style.display = "flex";
+          line.style.display = "none";
+        }
       }
   });
 
