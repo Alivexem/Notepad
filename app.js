@@ -3,7 +3,7 @@ const greeting = document.getElementById("greeting");
 
 if (date < 12) {
     greeting.innerText = "Welcome... Good morning!";
-} else if (date > 12 && date < 18) {
+} else if (date >= 12 && date < 18) {
     greeting.innerText = "Welcome... Good afternoon!";
 } else {
     greeting.innerText = "Welcome... Good evening!";
