@@ -142,6 +142,8 @@ function addNoteToDOM(title, main, createdAt) {
     recordText.style.color = "white"
     recordText.style.paddingBottom = "10px"
     recordText.style.paddingTop = "10px"
+    recordText.style.paddingLeft = "10px"
+    recordText.style.paddingRight = "10px"
     recordText.style.fontSize = "10px"
     
     secdiv.append(text)
