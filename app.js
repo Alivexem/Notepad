@@ -84,7 +84,7 @@ save.addEventListener("click", () => {
     noteData = {
       title: title,
       main: main,
-      createdAt: current// Add  this line to include the creation timestamp
+      createdAt: current
     };
     let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
 
