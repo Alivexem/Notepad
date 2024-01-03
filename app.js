@@ -70,8 +70,8 @@ save.addEventListener("click", () => {
         alert("Please fill up the fields before saving");
         return;
     }
-    if (title.length > 23) {
-        alert("Note title should be less than 23 characters");
+    if (title.length > 25) {
+        alert("Note title should be less than 25 characters");
         return;
     }
     if (main.length > 550) {
@@ -123,6 +123,7 @@ function addNoteToDOM(title, main, createdAt) {
     text.style.color = "#00aaff"
     text.style.paddingLeft = "10px"
     div.classList.add("block");
+    
     secdiv.classList.add("secblock");
     text.classList.add("text");
     let deleteIcon = document.createElement("i");
