@@ -131,8 +131,8 @@ function addNoteToDOM(title, main, createdAt) {
     deleteIcon.style.color = "red"
     deleteIcon.style.fontSize = "24px"
     deleteIcon.classList.add("delete");
-    deleteIcon.style.marginLeft = "70px"
-    deleteIcon.style.paddingRight = "25px"
+    deleteIcon.style.marginLeft = "60px"
+    deleteIcon.style.paddingRight = "20px"
     
     let recordText = document.createElement("tt")
     recordText.innerText = `Created at: ${createdAt !== undefined ? createdAt : new Date()}`;
