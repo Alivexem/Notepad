@@ -1,3 +1,19 @@
+.loader {
+  border: 16px solid green;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  z-index: 9999;
+  display: none;
+}
+
 body{
     background-color: #2C2C2C;
     padding: 2px 7px 0px 7px;
