@@ -121,7 +121,7 @@ function addNoteToDOM(title, main, createdAt) {
     
     text.innerText = `READ: ${title}`;
     text.style.color = "#00aaff"
-    text.style.paddingLeft = "10px"
+    text.style.paddingLeft = "20px"
     div.classList.add("block");
     
     secdiv.classList.add("secblock");
