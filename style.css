@@ -4,6 +4,10 @@ body{
     font-family: 'Roboto', sans-serif;
     padding: 8px;
 }
+header{
+  display: flex;
+  flex-direction: row;
+}
 #des{
     background-color: #ACC8E5;
     text-align: center;
@@ -17,11 +21,11 @@ body{
 #note{
     display: flex;
     flex-direction: column;
-    border: 2.5px solid #ACC8E5;
+    border: 2.5px solid gray;
     background-color: snow;
-    height: 300px;
+    height: 450px;
     width: 90%;
-    border-radius: 4px;
+    border-radius: 12px;
     padding: 10px 10px 20px 10px;
     font-size: 14px;
 }
@@ -57,7 +61,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
+
 }
 
 
@@ -67,10 +71,10 @@ body{
     width: 60%;
     border-radius: 5px;
     border: 1px solid black;
-    font-size: 18px;
+    font-size: 17px;
     padding: 6px 6px 6px 12px;
     font-weight: bold;
-    color: gray;
+    color: #333333;
 }
 
 #main{
@@ -80,17 +84,17 @@ body{
     margin: 5px;
     border: 1px solid black;
     border-radius: 5px;
-    color: gray;
+    color: #333333;
 }
 
 #show{
-    padding: 13px;
+    padding: 8px 25px 20px 25px;
     background-color: white;
     font-size: 17px;
-    color: gray;
+    color: #333333;
     margin-top: 20px;
-    border: 1.5px solid violet;
-    border-radius: 13px 13px 0 0;
+    border: 3.5px solid #00aaff;
+    border-radius: 8px 8px 8px 8px;
     font-weight: bold;
 }
 
@@ -99,26 +103,15 @@ body{
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background-color: #333333;
     border-radius: 13px;
     margin-bottom: 20px;
-    padding: 5px 5px 10px 5px;
+    padding: 10px 10px 10px 10px;
     color: white;
-    height: 100px;
-    width: 70%;
+    height: 110px;
+    width: 75%;
 }
 
-.delete{
-    background-color: red;
-    border-radius: 6px;
-    height: 34px;
-    margin-top: 10px;
-    width: 100px;
-    color:white;
-    border:none;
-    font-weight: bold;
-    font-size: 16px;
-}
 
 #list{
     display: flex;
@@ -128,27 +121,47 @@ body{
 }
 
 #close{
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin-bottom: 100px;
 }
 
 #closebtn{
-    background-color: violet;
+    background-color: #00aaff;
     border-radius: 6px;
     height: 34px;
-    margin-top: 5px;
+    margin-top: 15px;
     width: 100px;
     color:white;
     border:none;
     font-weight: bold;
     font-size: 16px;
+    margin-left: 80px;
+}
+
+#editbtn{
+    background-color: #00aaff;
+    border-radius: 6px;
+    height: 34px;
+    margin-top: 15px;
+    width: 100px;
+    color:white;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 25px;
 }
 
 #closebtn:active{
     background-color: gray;
 }
-.delete:active{
+#editbtn:active{
     background-color: gray;
+}
+
+.delete:active{
+    color: blue;
 }
 #save:active{
     background-color:gray;
@@ -169,4 +182,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 45px;
+}
+
+.secblock{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
