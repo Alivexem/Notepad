@@ -1,6 +1,19 @@
 /* AlivexemTech... feel free to Duplicate this code*/
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const loader = document.querySelector(".loader");
+    loader.style.display = "block"; // Show the loader when the page starts loading
+
+    window.addEventListener("load", function () {
+      loader.style.display = "none"; // Hide the loader when the page has finished loading
+    });
+    let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+
+    savedNotes.forEach((noteData) => {
+        addNoteToDOM(noteData.title, noteData.main,noteData.createdAt);
+    });
+});
 
 let date = new Date().getHours();
 const greeting = document.getElementById("greeting");
@@ -47,13 +60,6 @@ let show = document.getElementById("show");
 show.style.display = "none";
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
-
-    savedNotes.forEach((noteData) => {
-        addNoteToDOM(noteData.title, noteData.main,noteData.createdAt);
-    });
-});
 let duplicate = false 
 let noteData;
 let current;
