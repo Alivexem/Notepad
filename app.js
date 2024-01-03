@@ -1,3 +1,6 @@
+/* AlivexemTech... feel free to Duplicate this code*/
+
+
 let date = new Date().getHours();
 const greeting = document.getElementById("greeting");
 
