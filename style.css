@@ -124,8 +124,9 @@ header{
     margin-bottom: 20px;
     padding: 10px 10px 10px 10px;
     color: white;
-    height: 110px;
-    width: 75%;
+    height: 120px;
+    width: 85%;
+    overflow: auto;
 }
 
 
