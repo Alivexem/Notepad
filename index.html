@@ -6,42 +6,48 @@
         <title>Notepad</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body>
         <center>
          <h4 id="greeting" style="color: violet;"></h4>
      </center>
-        <h1 style="color: gold;">AlivexemTech Notepad</h1>
+     <header>
+        <h1 style="color: gold; margin-bottom: 35px;">Vanilla Notepad</h1><img style="margin-top: -15px; margin-left: -12px;" src="pen.png" height="105" width="85">
+     </header>
 
-        
             <div id="note">
+              <center>
+                <h3 id="announce" style="color:#00aaff; font-size: 20px;">YOU ARE EDITING AN OLD NOTE...</h3>
+              </center>
                 <p style="font-size: 16px; font-weight: bold;">TITLE </p>
-                <input id="title" type="text" placeholder="e.g AlivexemTech">
+                <input id="title" type="text" placeholder="e.g My Bucket list">
         <p style="font-size: 14px; font-weight: bold;">START WRITING NOTES</p>
-        <textarea id="main" rows="40" cols="30" placeholder="e.g The developer behind AlivexemTech..."></textarea>
+        <textarea id="main" rows="40" cols="30" placeholder="e.g With so many things on my mind..."></textarea>
     </div>
     <div id="btn">
         <button id="save">Save</button>
         <button id="refresh">refresh</button>
-        
+
     </div>
     <center>
-       <h2 id="heading" style="color: gold;">MY NOTES</h2>
+       <h2 id="heading" style="color: gold; margin-top: 55px;">MY NOTES</h2>
         </center>
    <div id="list">
-       
+
    </div>
-   <h3 id="h3" style="color: violet;"> Note opened </h3>
+   <h3 id="h3" style="color: gray; font-size: 17px; margin-top: 25px;"> NOTE OPENED </h3>
            <div id="show"></div>
            <div id="close">
+               <button id="editbtn">edit note</button>             
                <button id="closebtn">close note</button>
            </div>
-        
+
         <div id="oops">
             <img src="opps.webp" height="130" width="130" alt="nothing here">
-            <tt style="font-size: 15px; color:white;">Nothing here yet</tt>
+            <tt style="font-size: 15px; color:white;">No notes yet...</tt>
         </div>
-     
+
 
 
 
