@@ -70,8 +70,8 @@ save.addEventListener("click", () => {
         alert("Please fill up the fields before saving");
         return;
     }
-    if (title.length > 30) {
-        alert("Note title should be less than 30 characters");
+    if (title.length > 23) {
+        alert("Note title should be less than 23 characters");
         return;
     }
     if (main.length > 550) {
