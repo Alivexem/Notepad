@@ -80,8 +80,8 @@ save.addEventListener("click", () => {
 
   
     addNoteToDOM(title, main);
-    title.value = ""
-    main.value = ""
+    title = ""
+    main = ""
 });
 
 function addNoteToDOM(title, main) {
