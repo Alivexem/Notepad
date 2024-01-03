@@ -3,10 +3,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const loader = document.querySelector(".loader");
-    loader.style.display = "block"; // Show the loader when the page starts loading
+    loader.style.display = "block"; 
 
     window.addEventListener("load", function () {
-      loader.style.display = "none"; // Hide the loader when the page has finished loading
+      loader.style.display = "none"; 
     });
     let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
 
