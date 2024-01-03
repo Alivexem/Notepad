@@ -88,15 +88,15 @@ save.addEventListener("click", () => {
     };
     let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
 
-    // Check if a note with the same title already exists
+   
     let existingNoteIndex = savedNotes.findIndex((note) => note.title === title);
     if (existingNoteIndex !== -1) {
-        // Replace the existing note
+       
         duplicate = true
         savedNotes[existingNoteIndex] = noteData;
         
     } else {
-        // Add a new note
+       
         duplicate = false
         savedNotes.push(noteData);
     }
@@ -105,7 +105,7 @@ save.addEventListener("click", () => {
 
     addNoteToDOM(title, main);
     if (duplicate) {
-        // Replace the existing note
+       
         window.location.href = window.location.pathname;
         window.location.reload();
     }
@@ -168,9 +168,9 @@ function addNoteToDOM(title, main, createdAt) {
           localStorage.setItem("notes", JSON.stringify(savedNotes));
         }
 
-    // Delete only parent divs
+    
         div.remove()
-    // Your existing code
+    
         if (list.innerText === "") {
           show.style.display = "none";
           heading.style.display = "none";
