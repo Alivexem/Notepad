@@ -1,8 +1,6 @@
 /* AlivexemTech... feel free to Duplicate this code*/
 
-const loader = document.querySelector(".loader");
 
-addEventListener("load", () => loader.style.display = "none");
 
 document.addEventListener("DOMContentLoaded", () => {
     let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
