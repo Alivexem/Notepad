@@ -1,13 +1,21 @@
 /* AlivexemTech... feel free to Duplicate this code*/
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const loader = document.querySelector(".loader");
-    loader.style.display = "block"; 
 
-    window.addEventListener("load", function () {
-      loader.style.display = "none"; 
-    });
+let loaded = 0;
+
+const displayLoader = () => {
+  loaded++;
+  if (loaded < 2) {
+    loader.style.display = "block";
+  } else {
+    loader.style.display = "none";
+  }
+};
+
+document.addEventListener("DOMContentLoaded", displayLoader);
+addEventListener("load", displayLoader);
+
     let savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
 
     savedNotes.forEach((noteData) => {
