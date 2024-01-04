@@ -100,6 +100,7 @@ save.addEventListener("click", () => {
     }
     document.getElementById("title").value = "";
     document.getElementById("main").value = "";
+    window.location.hash = "#heading"
 });
 
 function addNoteToDOM(title, main, createdAt) {
