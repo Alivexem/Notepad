@@ -135,7 +135,7 @@ function addNoteToDOM(title, main, createdAt) {
     deleteIcon.style.paddingRight = "20px"
     
     let recordText = document.createElement("tt")
-    recordText.innerText = `Created at: ${createdAt !== undefined ? createdAt : new Date()}`;
+    recordText.innerText = `Created on: ${createdAt !== undefined ? createdAt : new Date()}`;
 
    
   
