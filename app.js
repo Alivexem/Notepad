@@ -183,7 +183,7 @@ function addNoteToDOM(title, main, createdAt) {
         topic.style.textDecoration = "underline";
 
         let note = document.createElement("h4");
-        note.innerText = "NOTE:";
+        note.innerText = "BODY:";
         note.style.fontWeight = "bold";
         note.style.textDecoration = "underline";
         show.append(topic, title, note, main);
