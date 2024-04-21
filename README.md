@@ -31,3 +31,6 @@ To run the web app locally:
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
 
+# Link
+- https://alivexem.github.io/Notepad/
+
