@@ -1,6 +1,6 @@
 
-
-body{
+@media screen and (max-width: 650px){
+    body{
     background-color: #2C2C2C;
     padding: 2px 7px 0px 7px;
     font-family: 'Roboto', sans-serif;
@@ -195,4 +195,213 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+    
+}
+
+
+
+@media screen and (min-width: 650px){
+    body{
+    background-color: #2C2C2C;
+    padding: 2px 7px 0px 7px;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+}
+#des{
+    background-color: #ACC8E5;
+    text-align: center;
+    padding: 7px 7px 14px 7px;
+    border-radius: 0 0 0 0;
+    margin-top: 100px;
+    font-size: 12px;
+    color: #112A46;
+    border: 1px solid white;
+}
+#note{
+    display: flex;
+    flex-direction: column;
+    border: 2.5px solid gray;
+    background-color: snow;
+    height: 250px;
+    width: 70%;
+    border-radius: 12px;
+    padding: 10px 10px 20px 10px;
+    font-size: 14px;
+    overflow: auto;
+}
+
+#note p{
+    margin-bottom: 8px;
+}
+#save{
+    background-color: green;
+    border-radius: 6px;
+    height: 34px;
+    margin-top: 30px;
+    margin-right: 120px;
+    width: 100px;
+    margin-left: 50px;
+    color:white;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#refresh{
+    background-color: orange;
+    border-radius: 6px;
+    height: 34px;
+    margin-top: 30px;
+    width: 100px;
+    color:white;
+    margin-left: 120px;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}*/
+
+
+
+#title{
+    height: 35px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 6px 6px 6px 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+#main{
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #333333;
+    height: 40%;
+}
+
+#show{
+    padding: 8px 25px 20px 25px;
+    background-color: white;
+    font-size: 17px;
+    color: #333333;
+    margin-top: 20px;
+    border: 3.5px solid #00aaff;
+    border-radius: 8px 8px 8px 8px;
+    font-weight: bold;
+}
+
+.block{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333333;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    height: 120px;
+    width: 90%;
+    overflow: auto;
+}
+
+
+#list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#close{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+#closebtn{
+    background-color: #00aaff;
+    border-radius: 6px;
+    height: 34px;
+    margin-top: 15px;
+    width: 100px;
+    color:white;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+#editbtn{
+    background-color: #00aaff;
+    border-radius: 6px;
+    height: 34px;
+    margin-top: 15px;
+    width: 100px;
+    color:white;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+#closebtn:active{
+    background-color: gray;
+}
+#editbtn:active{
+    background-color: gray;
+}
+
+.delete:active{
+    color: blue;
+}
+#save:active{
+    background-color:gray;
+}
+#refresh:active{
+    background-color: gray;
+}
+.text:active{
+    color: gold;
+}
+
+.text{
+    text-decoration: underline;
+}
+
+#oops{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.secblock{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+    
 }
