@@ -21,14 +21,6 @@ if (date < 12) {
     greeting.innerText = "Welcome... Good evening!";
 }
 
-let arr = ["gray", "snow"];
-let start = 0;
-setInterval(() => {
-    let index = (start + 1) % arr.length;
-    greeting.style.color = arr[index];
-    start++;
-}, 700);
-
 let announce = document.getElementById("announce");
 
 announce.style.display = "none";
