@@ -259,7 +259,7 @@ header{
     margin-top: 30px;
     width: 100px;
     color:white;
-    margin-left: 120px;
+    margin-left: 400px;
     border:none;
     font-weight: bold;
     font-size: 16px;
@@ -341,7 +341,7 @@ header{
 }
 
 #closebtn{
-    background-color: #00aaff;
+    background-color: orange;
     border-radius: 6px;
     height: 34px;
     margin-top: 15px;
@@ -354,7 +354,7 @@ header{
 }
 
 #editbtn{
-    background-color: #00aaff;
+    background-color: green;
     border-radius: 6px;
     height: 34px;
     margin-top: 15px;
